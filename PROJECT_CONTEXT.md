@@ -34,12 +34,19 @@ MDX is allowed later if a content section needs it. Do not add libraries until t
 ## Layout of the repo
 
 ```
-app/                 App Router: layout, page, globals.css
-public/              Static assets (still the Next.js starter SVGs)
-AI_RULES.md          Coding and content rules for agents
-AGENTS.md            Agent entrypoint (includes a Next.js-managed block)
-CLAUDE.md            Points at AGENTS.md
-PROJECT_CONTEXT.md   This file
+app/                   App Router: layout, page, globals.css
+components/ui/         Reusable UI primitives (empty for now)
+components/layout/     Site chrome: header, footer, shell (empty for now)
+components/sections/   Page sections (empty for now)
+components/projects/   Project-specific UI (empty for now)
+content/projects/      Project content files (empty for now)
+data/                  Typed data modules (empty for now)
+lib/                   Shared helpers (empty for now)
+public/                Static assets (still the Next.js starter SVGs)
+AI_RULES.md            Coding and content rules for agents
+AGENTS.md              Agent entrypoint (includes a Next.js-managed block)
+CLAUDE.md              Points at AGENTS.md
+PROJECT_CONTEXT.md     This file
 ```
 
 There is no `src/` directory. Keep the App Router at `app/`.
