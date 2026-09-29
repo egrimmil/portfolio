@@ -4,9 +4,9 @@ Spec-Driven Development artifacts live here and under `specs/`. Spec Kit CLI is 
 
 ## Current feature
 
-`specs/001-portfolio-v1/` — public home. **Status:** v1 implemented (`/en`, `/es`). Next: converge if needed; v2 later (project pages + screenshots).
+`specs/001-portfolio-v1/` — public home. **Status:** implemented (`/en`, `/es`).
 
-v2 (later spec): per-project pages with screenshots. Not in v1.
+`specs/002-portfolio-v2/` — Skills + Experience + Web on home. **Status:** implemented. Project pages + screenshots remain a later spec.
 
 ## Phase order
 

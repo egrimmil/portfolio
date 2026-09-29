@@ -1,6 +1,9 @@
 import type { Copy } from './locales';
 
 export const dictionary = {
+  skillsHeading: { en: 'Skills', es: 'Habilidades' },
+  experienceHeading: { en: 'Experience', es: 'Experiencia' },
+  webHeading: { en: 'Web', es: 'Web' },
   workHeading: { en: 'Work', es: 'Trabajo' },
   contactHeading: { en: 'Contact', es: 'Contacto' },
   languageNavLabel: { en: 'Language', es: 'Idioma' },

@@ -6,6 +6,10 @@ export const profile = {
     en: 'Android / Kotlin Multiplatform Developer',
     es: 'Desarrollador Android / Kotlin Multiplatform',
   } satisfies Copy,
+  experienceSummary: {
+    en: 'Mobile: +8 years / Web: +1 years',
+    es: 'Móvil: +8 años / Web: +1 años',
+  } satisfies Copy,
   aboutHeading: {
     en: 'About',
     es: 'Sobre mí',

@@ -10,9 +10,9 @@ Build a truthful, professional portfolio that presents Elkin’s real work, skil
 
 ## Current snapshot (2026-09-28)
 
-v1 home is live at `/en` (default) and `/es`. Content: identity, About, four work cards, Bogotá + open to work, email / LinkedIn / GitHub. No phone. No per-project pages.
+v2 home is live at `/en` (default) and `/es`. Content: identity (name, role), About, grouped Skills, Experience (`Mobile: +8 years / Web: +1 years`), Web, four work cards, Bogotá + open to work, email / LinkedIn / GitHub. No phone. Master’s only in About. No per-project pages.
 
-SDD artifacts: `.specify/memory/constitution.md`, `specs/001-portfolio-v1/`. v2 (later): project pages with screenshots.
+SDD: `.specify/memory/constitution.md`. v1: `specs/001-portfolio-v1/` (implemented). v2: `specs/002-portfolio-v2/` (implemented). Project pages + screenshots: later spec.
 
 ## Stack
 
