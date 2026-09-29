@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useSyncExternalStore } from 'react';
 import { dictionary } from '@/data/dictionary';
 import { navItems } from '@/data/nav';
@@ -15,7 +16,9 @@ function subscribe(onChange: () => void) {
 }
 
 export function SiteDock({ locale }: { locale: Locale }) {
+  const pathname = usePathname();
   const hash = useSyncExternalStore(subscribe, readHash, () => '');
+  const onProjects = pathname.includes('/projects');
 
   return (
     <nav
@@ -25,11 +28,14 @@ export function SiteDock({ locale }: { locale: Locale }) {
     >
       <ul className="mx-auto flex max-w-lg justify-between px-2 py-1">
         {navItems.map((item) => {
-          const current = hash === item.hash;
+          const current =
+            item.match === 'projects'
+              ? onProjects
+              : !onProjects && hash === item.id;
           return (
-            <li key={item.hash} className="flex-1">
+            <li key={item.id} className="flex-1">
               <a
-                href={`/${locale}#${item.hash}`}
+                href={item.href(locale)}
                 aria-current={current ? 'location' : undefined}
                 className={`flex min-h-11 flex-col items-center justify-center px-1 text-center font-mono text-[9px] font-semibold tracking-wide uppercase ${
                   current ? 'text-primary' : 'text-muted'

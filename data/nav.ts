@@ -1,15 +1,44 @@
 import type { Copy } from './locales';
 
-export const navItems = [
-  { hash: 'overview', label: { en: 'Overview', es: 'Inicio' } satisfies Copy },
-  { hash: 'work', label: { en: 'Projects', es: 'Proyectos' } satisfies Copy },
+export type NavItem = {
+  id: string;
+  href: (locale: string) => string;
+  label: Copy;
+  match: 'home-hash' | 'projects';
+};
+
+export const navItems: NavItem[] = [
   {
-    hash: 'experience',
-    label: { en: 'Architecture', es: 'Trayectoria' } satisfies Copy,
+    id: 'overview',
+    href: (locale) => `/${locale}#overview`,
+    label: { en: 'Overview', es: 'Inicio' },
+    match: 'home-hash',
   },
-  { hash: 'skills', label: { en: 'Stack', es: 'Stack' } satisfies Copy },
-  { hash: 'contact', label: { en: 'Contact', es: 'Contacto' } satisfies Copy },
-] as const;
+  {
+    id: 'projects',
+    href: (locale) => `/${locale}/projects`,
+    label: { en: 'Projects', es: 'Proyectos' },
+    match: 'projects',
+  },
+  {
+    id: 'experience',
+    href: (locale) => `/${locale}#experience`,
+    label: { en: 'Architecture', es: 'Trayectoria' },
+    match: 'home-hash',
+  },
+  {
+    id: 'skills',
+    href: (locale) => `/${locale}#skills`,
+    label: { en: 'Stack', es: 'Stack' },
+    match: 'home-hash',
+  },
+  {
+    id: 'contact',
+    href: (locale) => `/${locale}#contact`,
+    label: { en: 'Contact', es: 'Contacto' },
+    match: 'home-hash',
+  },
+];
 
 export const heroChips = [
   'Kotlin',

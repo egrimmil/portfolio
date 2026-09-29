@@ -15,8 +15,8 @@ This is Elkin Fracica’s personal portfolio (Next.js 16 App Router). Work is Sp
 ## Do this first
 
 1. Read `.specify/memory/constitution.md`, then `PROJECT_CONTEXT.md` and `AI_RULES.md`.
-2. For product work, read the active spec under `specs/` (currently `specs/003-portfolio-v3/spec.md`).
-3. Do not implement portfolio UI except by executing the active spec’s `tasks.md`. v3 restyle is implemented; later product work needs a new spec.
+2. For product work, read the active spec under `specs/` (currently `specs/005-portfolio-v5/spec.md`).
+3. Do not implement portfolio UI except by executing the active spec’s `tasks.md`. v4 projects index exists; v5 is the index layout. Later product work needs a new spec.
 4. Confirm the change is needed. Do not rewrite the app or add dependencies without a reason.
 5. For Next.js APIs, open the local docs in `node_modules/next/dist/docs/` instead of assuming older App Router behavior.
 

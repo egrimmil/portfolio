@@ -10,7 +10,7 @@ Build a truthful, professional portfolio that presents Elkin’s real work, skil
 
 ## Current snapshot (2026-09-29)
 
-v3 home at `/en` (default) and `/es`: Stitch visual system, dark default with light toggle, in-page nav. Role: Senior Android Developer. Content from v1/v2 (no Stitch demo metrics/projects/writing). No phone. No per-project pages.
+v5: projects index layout (eyebrow, large title, 3-col cards, status chips). No filters/search. v4 routes still list every signed project newest first. Home still shows four featured cards. Role: Senior Android Developer. No phone. No per-project detail routes.
 
 ## Stack
 

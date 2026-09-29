@@ -5,6 +5,25 @@ export const dictionary = {
   experienceHeading: { en: 'Experience', es: 'Experiencia' },
   webHeading: { en: 'Web', es: 'Web' },
   workHeading: { en: 'Featured projects', es: 'Proyectos destacados' },
+  projectsPageKicker: {
+    en: '// PROJECTS',
+    es: '// PROYECTOS',
+  },
+  projectsPageHeading: {
+    en: 'Projects & software architecture',
+    es: 'Proyectos y arquitectura de software',
+  },
+  projectsPageLead: {
+    en: 'Signed native and cross-platform work, newest first. Store links appear only when a public Play listing exists.',
+    es: 'Trabajo nativo y multiplataforma firmado, del más reciente al más antiguo. Los enlaces a la tienda solo aparecen cuando hay ficha pública en Play.',
+  },
+  statusProduction: { en: 'Production', es: 'Producción' },
+  statusFeatured: { en: 'Featured', es: 'Destacado' },
+  viewAllProjects: { en: 'View all projects', es: 'Ver todos los proyectos' },
+  projectsPageTitle: {
+    en: 'Projects',
+    es: 'Proyectos',
+  },
   contactHeading: { en: "Let's Connect", es: 'Conectemos' },
   languageNavLabel: { en: 'Language', es: 'Idioma' },
   siteNavLabel: { en: 'Sections', es: 'Secciones' },

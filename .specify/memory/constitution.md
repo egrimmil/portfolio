@@ -10,7 +10,7 @@ Portfolio copy must be real. Do not invent jobs, companies, projects, technologi
 
 ### II. Bounded product
 
-This is a personal professional site. It is not a CMS, blog platform, authenticated app, or marketing experiment. Do not add auth, a CMS, analytics, extra marketing pages, or unrelated product features unless a later spec explicitly expands scope and this constitution is amended.
+This is a personal professional site. It is not a CMS, blog platform, authenticated app, or marketing experiment. Do not add auth, a CMS, analytics, extra marketing pages, or unrelated product features unless a later spec explicitly expands scope and this constitution is amended. Additional locale routes (for example a projects index) are allowed only when a spec names them.
 
 ### III. Existing stack and architecture
 
@@ -34,20 +34,20 @@ For product features, do not implement until the feature has `spec.md`, then `pl
 
 ## Source of truth
 
-| Document | Role |
-| --- | --- |
-| `.specify/memory/constitution.md` | Non-negotiable principles |
-| `AI_RULES.md` | Day-to-day coding and content rules |
-| `PROJECT_CONTEXT.md` | Product briefing and current snapshot |
-| `specs/<id>/spec.md` | What and why for the active feature |
-| `specs/<id>/plan.md` | How, after the spec is stable |
+| Document                          | Role                                  |
+| --------------------------------- | ------------------------------------- |
+| `.specify/memory/constitution.md` | Non-negotiable principles             |
+| `AI_RULES.md`                     | Day-to-day coding and content rules   |
+| `PROJECT_CONTEXT.md`              | Product briefing and current snapshot |
+| `specs/<id>/spec.md`              | What and why for the active feature   |
+| `specs/<id>/plan.md`              | How, after the spec is stable         |
 
 If these documents disagree, stop and reconcile them. Do not implement the conflict.
 
 ## Governance
 
 - Ratify changes by editing this file and updating **Last Amended**.
-- A new principle or a scope expansion (new routes, CMS, MDX, extra pages) requires a constitution amendment plus an updated spec.
+- A new principle or a scope expansion (auth, CMS, MDX, extra pages beyond what a spec names) requires a constitution amendment plus an updated spec.
 - Agents must not weaken “truthful content” or “bounded product” to ship faster.
 
-**Version**: 1.1.0 | **Ratified**: 2026-09-28 | **Last Amended**: 2026-09-28 (bilingual public copy; language selection in scope for v1)
+**Version**: 1.1.1 | **Ratified**: 2026-09-28 | **Last Amended**: 2026-09-29 (locale routes when a spec names them)

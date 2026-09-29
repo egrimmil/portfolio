@@ -10,6 +10,10 @@ Spec-Driven Development artifacts live here and under `specs/`. Spec Kit CLI is 
 
 `specs/003-portfolio-v3/` — Stitch visual restyle on real content. **Status:** implemented.
 
+`specs/004-portfolio-v4/` — All-projects page. **Status:** implemented.
+
+`specs/005-portfolio-v5/` — Projects index layout. **Status:** implemented.
+
 ## Phase order
 
 1. Constitution — `.specify/memory/constitution.md` (done for v1.0.0)
