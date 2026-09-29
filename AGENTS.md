@@ -10,13 +10,15 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Agent instructions
 
-This is Elkin Fracica’s personal portfolio (Next.js 16 App Router). Start by reading `PROJECT_CONTEXT.md`. Follow `AI_RULES.md` for coding and content rules.
+This is Elkin Fracica’s personal portfolio (Next.js 16 App Router). Work is Spec-Driven: constitution, then spec, then plan and tasks, then code.
 
 ## Do this first
 
-1. Read `PROJECT_CONTEXT.md` for purpose, stack, and current state.
-2. Confirm the change is needed. Do not rewrite the app or add dependencies without a reason.
-3. For Next.js APIs, open the local docs in `node_modules/next/dist/docs/` instead of assuming older App Router behavior.
+1. Read `.specify/memory/constitution.md`, then `PROJECT_CONTEXT.md` and `AI_RULES.md`.
+2. For product work, read the active spec under `specs/` (currently `specs/001-portfolio-v1/spec.md`).
+3. Do not implement portfolio UI except by executing `specs/001-portfolio-v1/tasks.md` (or a later spec’s tasks).
+4. Confirm the change is needed. Do not rewrite the app or add dependencies without a reason.
+5. For Next.js APIs, open the local docs in `node_modules/next/dist/docs/` instead of assuming older App Router behavior.
 
 ## Non-negotiable
 

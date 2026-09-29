@@ -10,24 +10,21 @@ Build a truthful, professional portfolio that presents Elkin’s real work, skil
 
 ## Current snapshot (2026-09-28)
 
-The repo is a fresh Next.js App Router app. The default create-next-app homepage is commented out in `app/page.tsx`. The live page is a placeholder:
+v1 home is live at `/en` (default) and `/es`. Content: identity, About, four work cards, Bogotá + open to work, email / LinkedIn / GitHub. No phone. No per-project pages.
 
-- Name: Elkin Fracica
-- Role line: Android / Kotlin Multiplatform Developer
-
-Metadata in `app/layout.tsx` is still the create-next-app default (`Create Next App`). There is no real content model, routing beyond `/`, or designed UI yet.
+SDD artifacts: `.specify/memory/constitution.md`, `specs/001-portfolio-v1/`. v2 (later): project pages with screenshots.
 
 ## Stack
 
-| Layer | Choice |
-| --- | --- |
-| Framework | Next.js 16 (App Router) |
-| UI | React 19 |
-| Language | TypeScript (strict) |
-| Styling | Tailwind CSS 4 |
-| Compiler | React Compiler enabled in `next.config.ts` |
+| Layer         | Choice                                                                                     |
+| ------------- | ------------------------------------------------------------------------------------------ |
+| Framework     | Next.js 16 (App Router)                                                                    |
+| UI            | React 19                                                                                   |
+| Language      | TypeScript (strict)                                                                        |
+| Styling       | Tailwind CSS 4                                                                             |
+| Compiler      | React Compiler enabled in `next.config.ts`                                                 |
 | Lint / format | ESLint (`eslint-config-next`) and Prettier (`singleQuote`, `semi`, Tailwind class sorting) |
-| Alias | `@/*` → repo root |
+| Alias         | `@/*` → repo root                                                                          |
 
 MDX is allowed later if a content section needs it. Do not add libraries until they are justified.
 
@@ -43,6 +40,8 @@ content/projects/      Project content files (empty for now)
 data/                  Typed data modules (empty for now)
 lib/                   Shared helpers (empty for now)
 public/                Static assets (still the Next.js starter SVGs)
+.specify/              SDD constitution and process notes
+specs/                 Feature specs (active: 001-portfolio-v1)
 AI_RULES.md            Coding and content rules for agents
 AGENTS.md              Agent entrypoint (includes a Next.js-managed block)
 CLAUDE.md              Points at AGENTS.md
@@ -73,6 +72,7 @@ Node docs for this Next.js version live under `node_modules/next/dist/docs/`. Tr
 
 ## Owner notes
 
-- Owner: Elkin. Role: software engineer.
-- Preferred language in chat: Spanish is fine; keep code, identifiers, and user-facing site copy in English unless Elkin asks otherwise.
+- Owner: Elkin. Role: software engineer. Public role: Android / Kotlin Multiplatform (KMP work for 7+ months; do not name the project until listed).
+- Chat with Elkin may be in Spanish. Public site copy is English and Spanish; **default locale is English**. Code and identifiers stay in English.
 - Do not expand scope (auth, CMS, analytics, extra pages) unless the task asks for it.
+- Product work follows SDD: see `.specify/README.md`. Constitution outranks ad-hoc prompts.
