@@ -4,7 +4,7 @@
 
 **Created**: 2026-09-29
 
-**Status**: Implemented — projects index layout (no filters/search)
+**Status**: Implemented — v5 adjustments (header, About type, Play button, stack, favicon, project blurbs)
 
 **Input**: Restyle `/[locale]/projects` to match the reference card grid (eyebrow, large title, dense cards with status chips and footer CTA). No category filters. No search.
 

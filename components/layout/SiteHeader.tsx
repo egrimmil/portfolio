@@ -10,8 +10,8 @@ export function SiteHeader({ locale }: { locale: Locale }) {
   return (
     <header className="border-hairline bg-canvas sticky top-0 z-40 border-b">
       <div className="mx-auto flex max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
-        <p className="text-ink shrink-0 text-sm font-semibold tracking-tight">
-          <Link href={`/${locale}`} className="hover:text-ink">
+        <p className="shrink-0 text-sm font-semibold tracking-tight">
+          <Link href={`/${locale}`} className="text-primary hover:text-primary">
             {profile.name}
           </Link>
         </p>

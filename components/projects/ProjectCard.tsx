@@ -34,9 +34,6 @@ export function ProjectCard({
       <div className="flex items-start justify-between gap-3">
         <div className="flex min-w-0 flex-wrap gap-1.5">
           {statusText ? <StatusBadge>{statusText}</StatusBadge> : null}
-          {project.featured ? (
-            <StatusBadge>{t(dictionary.statusFeatured, locale)}</StatusBadge>
-          ) : null}
         </div>
         <p className="text-muted max-w-[48%] text-right text-[10px] leading-4 font-medium tracking-wide uppercase">
           {t(project.role, locale)}
@@ -46,11 +43,9 @@ export function ProjectCard({
         <h3 className="text-ink text-lg font-semibold tracking-tight">
           {project.name}
         </h3>
-        {project.summary ? (
-          <p className="text-muted text-sm leading-6">
-            {t(project.summary, locale)}
-          </p>
-        ) : null}
+        <p className="text-muted text-sm leading-6">
+          {t(project.summary, locale)}
+        </p>
       </div>
       <ul
         className="flex flex-wrap gap-2"
@@ -64,8 +59,8 @@ export function ProjectCard({
       </ul>
       {project.url ? (
         <p className="mt-auto pt-3">
-          <ExternalLink href={project.url} locale={locale} variant="text">
-            {`${t(dictionary.playStore, locale)} →`}
+          <ExternalLink href={project.url} locale={locale} variant="play">
+            {t(dictionary.playStore, locale)}
           </ExternalLink>
         </p>
       ) : (

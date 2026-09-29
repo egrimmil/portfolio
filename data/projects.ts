@@ -8,7 +8,7 @@ export type Project = {
   inDevelopment: boolean;
   statusLabel: Copy | null;
   tech: string[];
-  summary: Copy | null;
+  summary: Copy;
   featured: boolean;
 };
 
@@ -113,14 +113,17 @@ export const projects: Project[] = [
       'JUnit',
       'MockK',
     ],
-    summary: null,
+    summary: {
+      en: 'Crypto-friendly banking app that integrates different account types and crypto transactions. Deployed in more than 10 countries.',
+      es: 'Aplicación bancaria crypto-friendly que integra diferentes tipos de cuentas y transacciones con criptomonedas. Desplegada en más de 10 países.',
+    },
     featured: true,
   },
   {
     id: 'baz-superapp',
     name: 'Baz Superapp',
     role: androidDeveloperRole,
-    url: 'https://play.google.com/store/apps/details?id=mx.app.baz.superapp',
+    url: null,
     inDevelopment: false,
     statusLabel: null,
     tech: [
@@ -136,7 +139,10 @@ export const projects: Project[] = [
       'JUnit4',
       'MockK',
     ],
-    summary: null,
+    summary: {
+      en: 'Mexico app launched by Grupo Salinas and associated with Banco Azteca. It integrates financial services, entertainment, and commerce, plus promotions and rewards for users.',
+      es: 'Aplicación de México lanzada por Grupo Salinas y asociada con Banco Azteca, diseñada para integrar servicios financieros, entretenimiento y comercio, además de promociones y recompensas para los usuarios.',
+    },
     featured: true,
   },
   {
@@ -147,7 +153,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: miClaroTech,
-    summary: null,
+    summary: {
+      en: 'Self-service app to manage mobile and home services: bill payment, usage, plan purchases or reloads, and home network administration.',
+      es: 'App de autoatención para administrar servicios móviles y del hogar: pago de facturas, gestión de consumo, compra o recargas de plan y administración de la red en el hogar.',
+    },
     featured: true,
   },
   {
@@ -158,7 +167,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: miClaroTech,
-    summary: null,
+    summary: {
+      en: 'Exclusive app for Claro Colombia employees. It offers internal support, complaints, claims, advice, and work information.',
+      es: 'Aplicación exclusiva para colaboradores de Claro en Colombia. Brinda soporte interno, quejas, reclamos, asesoría e información de labores.',
+    },
     featured: false,
   },
   {
@@ -169,7 +181,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: miClaroTech,
-    summary: null,
+    summary: {
+      en: 'Official app to manage health services and procedures digitally: appointments, results, medical records, directory, and locations.',
+      es: 'Aplicación oficial para gestionar servicios de salud y trámites de forma digital: citas médicas, resultados, historia clínica, directorio y sedes.',
+    },
     featured: false,
   },
   {
@@ -180,7 +195,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: miClaroTech,
-    summary: null,
+    summary: {
+      en: 'Official app to manage health services and procedures digitally: appointments, results, medical records, directory, and locations.',
+      es: 'Aplicación oficial para gestionar servicios de salud y trámites de forma digital: citas médicas, resultados, historia clínica, directorio y sedes.',
+    },
     featured: false,
   },
   {
@@ -191,7 +209,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: miClaroTech,
-    summary: null,
+    summary: {
+      en: 'Official app to manage health services and procedures digitally: appointments, results, medical records, directory, and locations. Aimed at users with the complementary plan.',
+      es: 'Aplicación oficial para gestionar servicios de salud y trámites de forma digital: citas médicas, resultados, historia clínica, directorio y sedes. Orientada a usuarios con el servicio complementario.',
+    },
     featured: false,
   },
   {
@@ -202,7 +223,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: rutappsTech,
-    summary: null,
+    summary: {
+      en: 'Monitor and manage vehicle routes in real time with GPS geolocation.',
+      es: 'Permite monitorear y administrar rutas de vehículos en tiempo real mediante geolocalización por GPS.',
+    },
     featured: false,
   },
   {
@@ -213,7 +237,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: rutappsTech,
-    summary: null,
+    summary: {
+      en: 'Education and financial-management app that helps people organize personal finances and improve their relationship with money.',
+      es: 'Aplicación de educación y gestión financiera que ayuda a las personas a organizar sus finanzas personales y mejorar su relación con el dinero.',
+    },
     featured: false,
   },
   {
@@ -224,7 +251,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: rutappsTech,
-    summary: null,
+    summary: {
+      en: 'App to inform and connect attendees—mainly directors, consultants, and the sales force—during large conventions and corporate meetings organized by Yanbal.',
+      es: 'Aplicación para informar y conectar a los asistentes, principalmente directoras, consultoras y fuerza de ventas, durante las grandes convenciones y reuniones corporativas organizadas por Yanbal.',
+    },
     featured: false,
   },
   {
@@ -235,7 +265,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: rutappsTech,
-    summary: null,
+    summary: {
+      en: 'Built for Colombia’s motorcyclist community, bringing together features, benefits, and services related to the motorcycle world.',
+      es: 'Diseñada para la comunidad de motociclistas en Colombia: reúne funciones, beneficios y servicios relacionados con el mundo motero.',
+    },
     featured: false,
   },
   {
@@ -246,7 +279,10 @@ export const projects: Project[] = [
     inDevelopment: false,
     statusLabel: null,
     tech: rutappsTech,
-    summary: null,
+    summary: {
+      en: 'App with catalog and information about products, locations, and distributors.',
+      es: 'Aplicación donde se puede consultar el catálogo e información sobre productos, sedes y distribuidores.',
+    },
     featured: false,
   },
 ];

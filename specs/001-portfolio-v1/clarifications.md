@@ -50,7 +50,7 @@ Order is **most recent → oldest**. Process bullets stay in notes. Card tech is
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Cross-Platform Attendance SaaS | Development Lead | Líder de desarrollo | none — in development (EN: In development / ES: En desarrollo) | Kotlin Multiplatform, Compose Multiplatform, Kotlin, Firebase, Firestore, Koin, MVVM, Clean Architecture, Coroutines, Flow | EN: Cross-platform attendance product for Android and iOS, still in development. ES: Producto de gestión de asistencia para Android e iOS, aún en desarrollo. |
 | 2 | ikigii | Tech Consultant | Consultor tecnológico | https://play.google.com/store/apps/details?id=com.towerbank.ikigii | Kotlin, Clean Architecture, MVVM, Hilt, Flow, Retrofit, Firebase, Glide, Lottie, JUnit, MockK | none (name + role + link only) |
-| 3 | Baz Superapp | Android Developer | Desarrollador Android | https://play.google.com/store/apps/details?id=mx.app.baz.superapp | Kotlin, Clean Architecture, MVVM, Jetpack Compose, Hilt, Flow, Retrofit, Glide, Lottie, JUnit4, MockK | none |
+| 3 | Baz Superapp | Android Developer | Desarrollador Android | none — Play listing no longer available (signed 2026-09-29) | Kotlin, Clean Architecture, MVVM, Jetpack Compose, Hilt, Flow, Retrofit, Glide, Lottie, JUnit4, MockK | none |
 | 4 | Mi Claro App | Android Team Lead, Android Developer | Líder de equipo Android, desarrollador Android | https://play.google.com/store/apps/details?id=com.clarocolombia.miclaro | Kotlin, Clean Architecture, Onion, MVVM, Jetpack, Firebase, Retrofit, Glide, Coil, Lottie, JUnit4, MockK, Mockito, GitHub Actions | none |
 
 **Archive (not on v1 home)**

@@ -18,7 +18,6 @@ export const dictionary = {
     es: 'Trabajo nativo y multiplataforma firmado, del más reciente al más antiguo. Los enlaces a la tienda solo aparecen cuando hay ficha pública en Play.',
   },
   statusProduction: { en: 'Production', es: 'Producción' },
-  statusFeatured: { en: 'Featured', es: 'Destacado' },
   viewAllProjects: { en: 'View all projects', es: 'Ver todos los proyectos' },
   projectsPageTitle: {
     en: 'Projects',

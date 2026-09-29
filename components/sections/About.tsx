@@ -6,7 +6,7 @@ export function About({ locale }: { locale: Locale }) {
     <div className="flex flex-col gap-4">
       <h2
         id="about-heading"
-        className="text-ink text-xl font-semibold tracking-tight"
+        className="text-ink text-2xl font-bold tracking-tight"
       >
         {t(profile.aboutHeading, locale)}
       </h2>
