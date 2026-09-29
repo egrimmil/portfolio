@@ -6,7 +6,9 @@ Spec-Driven Development artifacts live here and under `specs/`. Spec Kit CLI is 
 
 `specs/001-portfolio-v1/` — public home. **Status:** implemented (`/en`, `/es`).
 
-`specs/002-portfolio-v2/` — Skills + Experience + Web on home. **Status:** implemented. Project pages + screenshots remain a later spec.
+`specs/002-portfolio-v2/` — Skills + Experience + Web on home. **Status:** implemented.
+
+`specs/003-portfolio-v3/` — Stitch visual restyle on real content. **Status:** implemented.
 
 ## Phase order
 

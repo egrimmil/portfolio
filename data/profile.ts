@@ -3,8 +3,8 @@ import type { Copy } from './locales';
 export const profile = {
   name: 'Elkin Fracica',
   role: {
-    en: 'Android / Kotlin Multiplatform Developer',
-    es: 'Desarrollador Android / Kotlin Multiplatform',
+    en: 'Senior Android Developer',
+    es: 'Desarrollador Android Senior',
   } satisfies Copy,
   experienceSummary: {
     en: 'Mobile: +8 years / Web: +1 years',

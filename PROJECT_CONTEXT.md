@@ -8,11 +8,9 @@ This file is the shared briefing for people and coding agents. Read it before ch
 
 Build a truthful, professional portfolio that presents Elkin’s real work, skills, and contact paths. It is not a template demo, not a blog platform, and not a place to invent a career narrative.
 
-## Current snapshot (2026-09-28)
+## Current snapshot (2026-09-29)
 
-v2 home is live at `/en` (default) and `/es`. Content: identity (name, role), About, grouped Skills, Experience (`Mobile: +8 years / Web: +1 years`), Web, four work cards, Bogotá + open to work, email / LinkedIn / GitHub. No phone. Master’s only in About. No per-project pages.
-
-SDD: `.specify/memory/constitution.md`. v1: `specs/001-portfolio-v1/` (implemented). v2: `specs/002-portfolio-v2/` (implemented). Project pages + screenshots: later spec.
+v3 home at `/en` (default) and `/es`: Stitch visual system, dark default with light toggle, in-page nav. Role: Senior Android Developer. Content from v1/v2 (no Stitch demo metrics/projects/writing). No phone. No per-project pages.
 
 ## Stack
 

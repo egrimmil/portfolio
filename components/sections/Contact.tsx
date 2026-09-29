@@ -1,26 +1,39 @@
 import { contactChannels } from '@/data/contact';
 import { dictionary } from '@/data/dictionary';
 import { t, type Locale } from '@/data/locales';
-import { ExternalLink } from '@/components/ui/ExternalLink';
+import { ExternalLink, contactButtonClass } from '@/components/ui/ExternalLink';
 
 export function Contact({ locale }: { locale: Locale }) {
   return (
-    <section aria-labelledby="contact-heading" className="flex flex-col gap-4">
-      <h2 id="contact-heading" className="text-xl font-semibold tracking-tight">
-        {t(dictionary.contactHeading, locale)}
-      </h2>
-      <ul className="flex flex-col gap-2 text-base">
+    <section
+      id="contact"
+      aria-labelledby="contact-heading"
+      className="border-hairline bg-surface flex scroll-mt-24 flex-col items-center gap-6 rounded-2xl border p-6 text-center sm:p-8"
+    >
+      <div className="flex flex-col items-center gap-2">
+        <h2
+          id="contact-heading"
+          className="text-ink text-2xl font-bold tracking-tight"
+        >
+          {t(dictionary.contactHeading, locale)}
+        </h2>
+        <p className="text-muted max-w-2xl text-sm leading-6">
+          {t(dictionary.contactLead, locale)}
+        </p>
+      </div>
+      <ul className="flex flex-wrap justify-center gap-3">
         {contactChannels.map((channel) => (
           <li key={channel.id}>
             {channel.href.startsWith('mailto:') ? (
-              <a
-                href={channel.href}
-                className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 dark:text-zinc-50 dark:decoration-zinc-600 dark:hover:decoration-zinc-50 dark:focus-visible:outline-zinc-100"
-              >
-                {`${t(channel.label, locale)}: ${channel.href.replace('mailto:', '')}`}
+              <a href={channel.href} className={contactButtonClass}>
+                {t(channel.label, locale)}
               </a>
             ) : (
-              <ExternalLink href={channel.href} locale={locale}>
+              <ExternalLink
+                href={channel.href}
+                locale={locale}
+                variant="contact"
+              >
                 {t(channel.label, locale)}
               </ExternalLink>
             )}

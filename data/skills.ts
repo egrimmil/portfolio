@@ -9,6 +9,20 @@ export type SkillGroup = {
   items: string[];
 };
 
+export const webFrontendSkills = new Set([
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'Bootstrap',
+  'jQuery',
+  'AngularJS',
+  'PHP',
+  'CodeIgniter',
+  'WordPress',
+  'Moodle',
+]);
+
 export const skillGroups: SkillGroup[] = [
   {
     id: 'mobile',
@@ -29,6 +43,7 @@ export const skillGroups: SkillGroup[] = [
       'Coil',
       'Lottie',
       'Picasso',
+      'Gradle',
     ],
   },
   {
@@ -58,8 +73,15 @@ export const skillGroups: SkillGroup[] = [
       'Firebase Realtime',
       'Authentication',
       'Crashlytics',
+      'Google Cloud',
+      'Cloud Messaging',
+      'Dynamic Links',
+      'A/B Testing',
+      'Distribution',
+      'Remote Config',
       'MySQL',
       'SQL',
+      'PHP',
     ],
   },
   {
@@ -93,7 +115,6 @@ export const skillGroups: SkillGroup[] = [
       'Bootstrap',
       'jQuery',
       'AngularJS',
-      'PHP',
       'CodeIgniter',
       'WordPress',
       'Moodle',

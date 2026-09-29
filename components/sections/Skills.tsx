@@ -1,31 +1,49 @@
 import { dictionary } from '@/data/dictionary';
-import { skillGroups } from '@/data/skills';
+import { skillGroups, webFrontendSkills } from '@/data/skills';
 import { t, type Locale } from '@/data/locales';
+import { Chip } from '@/components/ui/Chip';
 
 export function Skills({ locale }: { locale: Locale }) {
   return (
-    <section aria-labelledby="skills-heading" className="flex flex-col gap-6">
-      <h2 id="skills-heading" className="text-xl font-semibold tracking-tight">
+    <section
+      id="skills"
+      aria-labelledby="skills-heading"
+      className="flex scroll-mt-24 flex-col gap-6"
+    >
+      <h2
+        id="skills-heading"
+        className="text-ink text-2xl font-bold tracking-tight"
+      >
         {t(dictionary.skillsHeading, locale)}
       </h2>
-      <div className="flex flex-col gap-6">
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {skillGroups.map((group) => {
           const headingId = `skills-${group.id}`;
           return (
-            <div key={group.id} className="flex flex-col gap-3">
+            <div
+              key={group.id}
+              className="border-lavender/20 bg-surface flex flex-col gap-3 rounded-2xl border p-5"
+            >
               <h3
                 id={headingId}
-                className="text-sm font-semibold tracking-tight text-zinc-800 dark:text-zinc-200"
+                className="text-ink text-base font-semibold tracking-wide"
               >
                 {t(group.heading, locale)}
               </h3>
               <ul className="flex flex-wrap gap-2" aria-labelledby={headingId}>
-                {group.items.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-md bg-zinc-100 px-2 py-1 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200"
-                  >
-                    {item}
+                {group.items.map((item, index) => (
+                  <li key={item}>
+                    <Chip
+                      label={item}
+                      variant="stack"
+                      stackTone={
+                        webFrontendSkills.has(item)
+                          ? 'lavender'
+                          : index % 2 === 0
+                            ? 'primary'
+                            : 'primaryAlt'
+                      }
+                    />
                   </li>
                 ))}
               </ul>

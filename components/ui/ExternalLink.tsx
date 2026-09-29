@@ -1,14 +1,24 @@
 import { dictionary } from '@/data/dictionary';
 import { t, type Locale } from '@/data/locales';
 
+export const contactButtonClass =
+  'border-primary inline-flex min-h-11 items-center rounded-full border bg-transparent px-5 text-sm font-semibold text-primary hover:bg-primary hover:text-on-primary active:bg-primary active:text-on-primary';
+
+const variantClass = {
+  play: 'border-lavender/40 bg-lavender/15 text-lavender hover:bg-lavender/25',
+  contact: contactButtonClass,
+} as const;
+
 export function ExternalLink({
   href,
   locale,
   children,
+  variant,
 }: {
   href: string;
   locale: Locale;
   children: string;
+  variant: keyof typeof variantClass;
 }) {
   const hint = t(dictionary.externalLinkHint, locale);
   return (
@@ -16,7 +26,7 @@ export function ExternalLink({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-900 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-900 dark:text-zinc-50 dark:decoration-zinc-600 dark:hover:decoration-zinc-50 dark:focus-visible:outline-zinc-100"
+      className={`inline-flex min-h-11 items-center rounded-full border px-5 text-sm font-semibold ${variantClass[variant]}`}
     >
       {children}
       <span className="sr-only"> {hint}</span>

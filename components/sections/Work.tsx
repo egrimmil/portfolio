@@ -5,11 +5,18 @@ import { ProjectCard } from '@/components/projects/ProjectCard';
 
 export function Work({ locale }: { locale: Locale }) {
   return (
-    <section aria-labelledby="work-heading" className="flex flex-col gap-4">
-      <h2 id="work-heading" className="text-xl font-semibold tracking-tight">
+    <section
+      id="work"
+      aria-labelledby="work-heading"
+      className="flex scroll-mt-24 flex-col gap-4"
+    >
+      <h2
+        id="work-heading"
+        className="text-ink text-2xl font-bold tracking-tight"
+      >
         {t(dictionary.workHeading, locale)}
       </h2>
-      <ul className="flex flex-col gap-4">
+      <ul className="grid gap-4 md:grid-cols-2">
         {projects.map((project) => (
           <li key={project.id}>
             <ProjectCard project={project} locale={locale} />

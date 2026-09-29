@@ -1,6 +1,7 @@
 import { dictionary } from '@/data/dictionary';
 import { t, type Locale } from '@/data/locales';
 import type { Project } from '@/data/projects';
+import { Chip } from '@/components/ui/Chip';
 import { ExternalLink } from '@/components/ui/ExternalLink';
 
 export function ProjectCard({
@@ -11,20 +12,20 @@ export function ProjectCard({
   locale: Locale;
 }) {
   return (
-    <article className="flex flex-col gap-3 rounded-xl border border-zinc-200 p-4 dark:border-zinc-800">
+    <article className="border-hairline bg-surface flex h-full flex-col gap-3 rounded-2xl border p-5">
       <div className="flex flex-col gap-1">
-        <h3 className="text-lg font-semibold tracking-tight">{project.name}</h3>
-        <p className="text-sm text-zinc-600 dark:text-zinc-400">
-          {t(project.role, locale)}
-        </p>
+        <h3 className="text-ink text-lg font-semibold tracking-tight">
+          {project.name}
+        </h3>
+        <p className="text-primary text-sm">{t(project.role, locale)}</p>
         {project.inDevelopment && project.statusLabel ? (
-          <p className="text-sm font-medium">
+          <p className="text-primary font-mono text-xs font-semibold">
             {t(project.statusLabel, locale)}
           </p>
         ) : null}
       </div>
       {project.summary ? (
-        <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+        <p className="text-muted text-sm leading-6">
           {t(project.summary, locale)}
         </p>
       ) : null}
@@ -33,17 +34,14 @@ export function ProjectCard({
         aria-label={t(dictionary.techListLabel, locale)}
       >
         {project.tech.map((item) => (
-          <li
-            key={item}
-            className="rounded-md bg-zinc-100 px-2 py-1 text-xs text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200"
-          >
-            {item}
+          <li key={item}>
+            <Chip label={item} />
           </li>
         ))}
       </ul>
       {project.url ? (
-        <p>
-          <ExternalLink href={project.url} locale={locale}>
+        <p className="mt-auto pt-2">
+          <ExternalLink href={project.url} locale={locale} variant="play">
             {t(dictionary.playStore, locale)}
           </ExternalLink>
         </p>
