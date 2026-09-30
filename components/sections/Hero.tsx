@@ -3,6 +3,8 @@ import { heroChips } from '@/data/nav';
 import { profile } from '@/data/profile';
 import { t, type Locale } from '@/data/locales';
 import { Chip } from '@/components/ui/Chip';
+import { cvDownloadName, cvHref } from '@/data/contact';
+import { contactButtonClass } from '@/components/ui/ExternalLink';
 
 export function Hero({ locale }: { locale: Locale }) {
   return (
@@ -51,6 +53,15 @@ export function Hero({ locale }: { locale: Locale }) {
           </dd>
         </div>
       </dl>
+      <p>
+        <a
+          href={cvHref}
+          download={cvDownloadName}
+          className={contactButtonClass}
+        >
+          {t(dictionary.downloadCv, locale)}
+        </a>
+      </p>
     </div>
   );
 }

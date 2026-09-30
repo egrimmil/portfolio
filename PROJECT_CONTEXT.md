@@ -10,7 +10,7 @@ Build a truthful, professional portfolio that presents Elkin’s real work, skil
 
 ## Current snapshot (2026-09-29)
 
-v5: projects index layout (eyebrow, large title, 3-col cards, status chips). No filters/search. v4 routes still list every signed project newest first. Home still shows four featured cards. Role: Senior Android Developer. No phone. No per-project detail routes.
+v7: CV file in `public/` with same-origin download. v6 crawlable SEO. v5 project cards and chrome. v4 routes list every signed project newest first.
 
 ## Stack
 

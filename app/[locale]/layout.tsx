@@ -1,9 +1,11 @@
 import { Inter, JetBrains_Mono } from 'next/font/google';
 import { notFound } from 'next/navigation';
 import { isLocale, locales } from '@/data/locales';
-import { pageMetadata } from '@/lib/metadata';
+import { siteUrl } from '@/lib/site';
+import { PersonJsonLd } from '@/components/seo/PersonJsonLd';
 import { themeBootScript } from '@/components/theme/theme-boot';
 import '../globals.css';
+import type { Metadata } from 'next';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -19,10 +21,11 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: LayoutProps<'/[locale]'>) {
-  const { locale } = await params;
-  if (!isLocale(locale)) return {};
-  return pageMetadata(locale);
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    metadataBase: new URL(siteUrl()),
+    robots: { index: true, follow: true },
+  };
 }
 
 export default async function LocaleLayout({
@@ -41,6 +44,7 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <script dangerouslySetInnerHTML={{ __html: themeBootScript }} />
+        <PersonJsonLd locale={locale} />
         {children}
       </body>
     </html>
