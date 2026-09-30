@@ -1,4 +1,4 @@
-import { contactChannels } from '@/data/contact';
+import { publicContactChannels } from '@/data/contact';
 import { dictionary } from '@/data/dictionary';
 import { t, type Locale } from '@/data/locales';
 import { ExternalLink, contactButtonClass } from '@/components/ui/ExternalLink';
@@ -22,9 +22,17 @@ export function Contact({ locale }: { locale: Locale }) {
         </p>
       </div>
       <ul className="flex flex-wrap justify-center gap-3">
-        {contactChannels.map((channel) => (
+        {publicContactChannels().map((channel) => (
           <li key={channel.id}>
-            {channel.href.startsWith('mailto:') ? (
+            {channel.download ? (
+              <a
+                href={channel.href}
+                download={channel.download}
+                className={contactButtonClass}
+              >
+                {t(channel.label, locale)}
+              </a>
+            ) : channel.href.startsWith('mailto:') ? (
               <a href={channel.href} className={contactButtonClass}>
                 {t(channel.label, locale)}
               </a>

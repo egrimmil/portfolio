@@ -50,4 +50,8 @@ export const dictionary = {
     en: 'Tech',
     es: 'Tecnologías',
   },
+  downloadCv: {
+    en: 'Download CV',
+    es: 'Descargar CV',
+  },
 } as const satisfies Record<string, Copy>;

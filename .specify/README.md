@@ -14,6 +14,10 @@ Spec-Driven Development artifacts live here and under `specs/`. Spec Kit CLI is 
 
 `specs/005-portfolio-v5/` — Projects index layout. **Status:** implemented.
 
+`specs/006-portfolio-v6/` — CV link + SEO. **Status:** implemented.
+
+`specs/007-portfolio-v7/` — In-repo CV download. **Status:** implemented.
+
 ## Phase order
 
 1. Constitution — `.specify/memory/constitution.md` (done for v1.0.0)

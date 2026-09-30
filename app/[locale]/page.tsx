@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import { isLocale } from '@/data/locales';
+import { pageMetadata } from '@/lib/metadata';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { SiteDock } from '@/components/layout/SiteDock';
@@ -10,6 +11,12 @@ import { Experience } from '@/components/sections/Experience';
 import { Web } from '@/components/sections/Web';
 import { Work } from '@/components/sections/Work';
 import { Contact } from '@/components/sections/Contact';
+
+export async function generateMetadata({ params }: PageProps<'/[locale]'>) {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  return pageMetadata(locale);
+}
 
 export default async function HomePage({ params }: PageProps<'/[locale]'>) {
   const { locale } = await params;
