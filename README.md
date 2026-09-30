@@ -51,5 +51,3 @@ Then open [http://localhost:3000](http://localhost:3000).
 ## Deploy
 
 The site is live on Vercel: [https://portfolio-elkinfracica.vercel.app/](https://portfolio-elkinfracica.vercel.app/).
-
-Production builds follow the usual Next.js flow (`npm run build` / `npm run start`). For canonical URLs, sitemap, and Open Graph, set `NEXT_PUBLIC_SITE_URL` to `https://portfolio-elkinfracica.vercel.app` (no trailing slash) in the Vercel project.
